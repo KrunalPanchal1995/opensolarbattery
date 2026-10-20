@@ -27,8 +27,9 @@ SUNRISE, SUNSET = 6.0, 18.0                # a 12 hour day
 #
 #     P_pv(t) = P_peak * sun * sin(pi (t - 6) / 12)     for 6 <= t <= 18, else 0
 #
-# `P_peak` is the array rating in kW (output in full sun at noon) and `sun` (0 to 1) says how
-# clear the day is. Daily energy = area under the curve, in kWh (kW times hours).
+# `P_peak` is the array rating in **kW** (output in full sun at noon) and `sun` (0 to 1) says how
+# clear the day is. Daily energy = area under the curve, in **kWh** (kW times hours).
+# Remember: kW is the *rate* (like speed), kWh is the *total* (like distance).
 
 # %%
 def solar_power(t, peak_kw, sun=1.0):

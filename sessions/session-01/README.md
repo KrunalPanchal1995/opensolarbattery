@@ -8,6 +8,7 @@
 
 - The sine curve, and the idea that area under a graph adds up energy.
 - You have read PRIMER.md and run `python start.py 1` once.
+- You understand the difference between **power** (kW, a rate) and **energy** (kWh, a total over time).
 
 **Learning objectives.** After this session you can:
 
@@ -20,7 +21,7 @@
 A neighbour puts a solar array on the roof, yet the evening lights still run on grid power. Why? The sun makes power around noon, but a home uses most of its energy in the morning and the evening. Where the solar curve is above the demand curve there is a surplus nobody can use yet; where it is below, there is a deficit that something else must cover. This session draws both curves and measures the areas. It is an educational model, not an installation design, and nothing here is personal advice.
 
 ## B. Concept and theory
-Power is the rate of using energy, in kilowatts (kW). Energy is power multiplied by time, in kilowatt-hours (kWh): a 2 kW heater running for 3 hours uses 6 kWh. On a clear day the solar output rises and falls like half a sine wave between sunrise (6 h) and sunset (18 h), so the day's solar energy is the area under that half sine: array rating times 24 divided by pi, about 7.64 kWh per kW. The household demand has a small base load plus a morning and a bigger evening peak. We scale its shape so its area equals the daily energy you choose. Surplus is the area where solar is above demand, deficit the area where demand is above solar, and direct use is the area under the lower of the two curves.
+Power is the rate of using energy, in kilowatts (kW). Energy is power multiplied by time, in kilowatt-hours (kWh): a 2 kW heater running for 3 hours uses 6 kWh. On a clear day the solar output rises and falls like half a sine wave between sunrise (6 h) and sunset (18 h), so the day's solar energy is the area under that half sine: array rating times 24 divided by pi, about 7.64 kWh for every kW of array (a 1 kW array makes about 7.64 kWh over the whole day). The household demand has a small base load plus a morning and a bigger evening peak. We scale its shape so its area equals the daily energy you choose. Surplus is the area where solar is above demand, deficit the area where demand is above solar, and direct use is the area under the lower of the two curves.
 
 | Symbol | Meaning | Unit |
 |---|---|---|
@@ -144,7 +145,7 @@ Score yourself with [RUBRIC.md](../../RUBRIC.md). Print the [activity sheet](act
 |---|---|
 | If the solar energy equals my daily use, I will not need the grid. | Totals match, but timing does not: most solar arrives at midday and most demand in the morning and evening. |
 | A bigger array always meets more of my demand in proportion. | Without storage the share of demand met saturates (about 46 percent here); the extra energy becomes surplus. |
-| kW and kWh are the same thing. | kW is power (a rate); kWh is energy (power times time). A 4 kW array for 7.6 equivalent hours gives about 30.6 kWh. |
+| kW and kWh are the same thing. | **kW is power** — how fast energy is made or used at one moment (like speed). **kWh is energy** — the total amount made or used over time (like distance). A 4 kW array running for 7.6 equivalent hours of full sun makes about 30.6 kWh. If you only understand one, think: kW tells you the size of the kettle, kWh tells you how much it costs to run it. |
 
 ## Glossary
 - **kW (kilowatt)**: a unit of power; how fast energy is made or used
